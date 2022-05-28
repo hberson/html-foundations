@@ -1,0 +1,101 @@
+/* Color Palette */
+:root {
+    --color-main-text: #FFFFFF;
+    --color-paragraph: #EEEEEE;
+    --color-primary: #222831; 
+    --color-secondary: #393E46; 
+    --color-accent: #00ADB5; 
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Sacramento', cursive;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: 3rem;
+    }
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+.intro {
+    background-color: var(--color-primary);
+    color: var(--color-main-text);
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 100px;
+    top: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+    .top-cloud {
+        right: 500px;
+        top: 100px;
+    }
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+    .bottom-cloud {
+        left: 300px;
+        bottom: 200px;
+    }
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+}
+
+.about-me {
+    background-color: var(--color-secondary);
+    height: 100vh;
+}
