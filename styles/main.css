@@ -26,8 +26,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
+}
+
+a,
+a:visited,
+a:hover {
+    color: var(--color-accent);
 }
 
 h1 {
@@ -43,6 +50,7 @@ h1 {
 
 p {
     font-size: 1.6rem;
+    color: var(--color-paragraph);
 }
 
 @media screen and (min-width: 1024px) {
@@ -105,4 +113,29 @@ p {
 .about-me {
     background-color: var(--color-secondary);
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.profile {
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .profile {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.profile__image {
+    width: 200px;
+    height: 200px;
 }
