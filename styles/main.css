@@ -31,7 +31,7 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Sacramento', cursive;
 }
 
@@ -66,7 +66,7 @@ p {
 
 .top-cloud {
     position: absolute;
-    right: 100px;
+    right: 50px;
     top: 200px;
 }
 
@@ -79,8 +79,8 @@ p {
 
 .bottom-cloud {
     position: absolute;
-    left: 100px;
-    bottom: 300px;
+    left: 50px;
+    bottom: 250px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -93,6 +93,13 @@ p {
 .mountain {
     position: absolute;
     bottom: 0;
+    width: 300px;
+}
+
+@media screen and (min-width: 1024px) {
+    .mountain {
+        width: 598px;
+    }
 }
 
 .about-me {
